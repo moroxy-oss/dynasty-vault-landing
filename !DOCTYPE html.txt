@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Dynasty Vault - 75 AI Frameworks for Economic Sovereignty</title>
+    <meta name="description" content="75 AI mega-prompts that turn ChatGPT into your $100K executive team. MLK Day launch. $27 early access.">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+            background: #0A0A0A;
+            color: #F5F1E8;
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            text-align: center;
+            padding: 60px 20px 40px;
+            border-bottom: 3px solid #D4AF37;
+            margin-bottom: 60px;
+        }
+
+        .emoji {
+            font-size: 64px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        h1 {
+            font-size: clamp(2.2rem, 6vw, 3.5rem);
+            font-weight: 900;
+            color: #D4AF37;
+            margin-bottom: 20px;
+            line-height: 1.1;
+            letter-spacing: -1px;
+        }
+
+        .subheadline {
+            font-size: clamp(1.2rem, 3vw, 1.6rem);
+            color: #00FF87;
+            margin-bottom: 20px;
+            font-weight: 700;
+            line-height: 1.4;
+        }
+
+        .hero-kicker {
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+            color: #F5F1E8;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+
+        /* CTA BUTTON */
+        .cta-button {
+            display: inline-block;
+            padding: 20px 50px;
+            font-size: 1.3rem;
+            font-weight: 900;
+            background: #D4AF37;
+            color: #0A0A0A;
+            text-decoration: none;
+            border-radius: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+            margin: 20px 0;
+        }
+
+        .cta-button:hover {
+            background: #00FF87;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(0, 255, 135, 0.5);
+        }
+
+        .urgency {
+            font-size: 0.95rem;
+            color: #00FF87;
+            margin-top: 15px;
+            font-weight: 600;
+        }
+
+        /* SECTIONS */
+        section {
+            margin: 80px 0;
+        }
+
+        h2 {
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            color: #D4AF37;
+            margin-bottom: 30px;
+            font-weight: 800;
+            line-height: 1.3;
+        }
+
+        h3 {
+            font-size: clamp(1.3rem, 3vw, 1.8rem);
+            color: #00FF87;
+            margin: 30px 0 15px;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: clamp(1.05rem, 2.5vw, 1.15rem);
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        strong {
+            color: #D4AF37;
+            font-weight: 700;
+        }
+
+        em {
+            color: #00FF87;
+            font-style: italic;
+        }
+
+        /* QUOTE BLOCKS */
+        .quote {
+            background: rgba(212, 175, 55, 0.1);
+            border-left: 4px solid #D4AF37;
+            padding: 30px;
+            margin: 40px 0;
+            font-style: italic;
+            font-size: 1.2rem;
+            line-height: 1.7;
+        }
+
+        .quote-author {
+            margin-top: 15px;
+            font-style: normal;
+            color: #D4AF37;
+            font-weight: 700;
+        }
+
+        /* TESTIMONIALS */
+        .testimonial {
+            background: rgba(26, 26, 26, 0.8);
+            border-left: 4px solid #00FF87;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+
+        .testimonial-text {
+            font-size: 1.15rem;
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+
+        .testimonial-author {
+            color: #D4AF37;
+            font-weight: 700;
+        }
+
+        .testimonial-result {
+            color: #00FF87;
+            font-weight: 700;
+            margin-top: 10px;
+        }
+
+        /* VALUE STACK */
+        .value-stack {
+            background: rgba(212, 175, 55, 0.05);
+            border: 2px solid #D4AF37;
+            border-radius: 8px;
+            padding: 40px;
+            margin: 40px 0;
+        }
+
+        .value-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .value-item:last-child {
+            border-bottom: none;
+            padding-top: 30px;
+            font-size: 1.4rem;
+            font-weight: 900;
+        }
+
+        .value-label {
+            font-size: 1.1rem;
+        }
+
+        .value-price {
+            font-size: 1.3rem;
+            color: #00FF87;
+            font-weight: 700;
+        }
+
+        .total-value {
+            color: #D4AF37;
+        }
+
+        .your-price {
+            color: #00FF87;
+            font-size: 2rem;
+        }
+
+        /* VOLUMES GRID */
+        .volumes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .volume-card {
+            background: rgba(26, 26, 26, 0.8);
+            border: 2px solid rgba(212, 175, 55, 0.3);
+            border-radius: 8px;
+            padding: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .volume-card:hover {
+            border-color: #D4AF37;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(212, 175, 55, 0.2);
+        }
+
+        .volume-emoji {
+            font-size: 2.5rem;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .volume-title {
+            font-size: 1.2rem;
+            color: #D4AF37;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .volume-desc {
+            font-size: 1rem;
+            color: #F5F1E8;
+            opacity: 0.9;
+        }
+
+        /* GUARANTEE BOX */
+        .guarantee {
+            background: linear-gradient(135deg, rgba(0, 255, 135, 0.1) 0%, rgba(212, 175, 55, 0.1) 100%);
+            border: 3px solid #00FF87;
+            border-radius: 8px;
+            padding: 40px;
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .guarantee h3 {
+            color: #00FF87;
+            margin-bottom: 20px;
+        }
+
+        /* COMPARISON TABLE */
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .comparison-column {
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+        .without {
+            background: rgba(255, 0, 0, 0.1);
+            border: 2px solid rgba(255, 0, 0, 0.3);
+        }
+
+        .with {
+            background: rgba(0, 255, 135, 0.1);
+            border: 2px solid rgba(0, 255, 135, 0.3);
+        }
+
+        .comparison h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .comparison ul {
+            list-style: none;
+        }
+
+        .comparison li {
+            padding: 10px 0;
+            font-size: 1rem;
+        }
+
+        .without li:before {
+            content: "❌ ";
+            margin-right: 8px;
+        }
+
+        .with li:before {
+            content: "✅ ";
+            margin-right: 8px;
+        }
+
+        /* STATS */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+
+        .stat-box {
+            background: rgba(26, 26, 26, 0.8);
+            border: 2px solid #D4AF37;
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            color: #00FF87;
+            font-weight: 900;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            color: #F5F1E8;
+            opacity: 0.9;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 60px 20px 40px;
+            border-top: 1px solid rgba(212, 175, 55, 0.3);
+            margin-top: 80px;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+            opacity: 0.7;
+            margin: 10px 0;
+        }
+
+        /* MOBILE RESPONSIVE */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 40px 15px 30px;
+            }
+
+            section {
+                margin: 50px 0;
+            }
+
+            .comparison {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-button {
+                width: 100%;
+                padding: 18px 30px;
+            }
+
+            .value-stack {
+                padding: 25px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- HERO SECTION -->
+<div class="hero">
+    <span class="emoji">✊🏾</span>
+    <h1>The Door Dr. King Died Opening Is Finally Unlocked</h1>
+    <p class="subheadline">75 AI Frameworks That Turn ChatGPT Into Your $100K Executive Team for $27</p>
+    <p class="hero-kicker">Use Your First One in 20 Minutes. Build Economic Sovereignty by This Weekend.</p>
+    
+    <a href="https://subscribe-forms.beehiiv.com/e828f662-7fe5-410b-a200-e3b12d760c2a?utm_source=www.culturecodeai.com&utm_medium=newsletter&utm_campaign=family-first-a-quiet-heads-up-before-monday&_bhlid=4100ffa418de56c79ea3313292e2d1186a93923d" class="cta-button">Join The Waitlist - Get First Access →</a>
+    
+    <p class="urgency">⚡ Launch: Monday, January 20th (MLK Day) at 6:00 AM EST</p>
+    <p class="urgency">💰 Early Access Price: $27 (48 Hours Only) | Then $47 Forever</p>
+</div>
+
+<div class="container">
+
+<!-- SECTION 1: THE VISION (MYRON) -->
+<section>
+    <div class="quote">
+        "I've been to the mountaintop... I've seen the Promised Land. I may not get there with you. But I want you to know tonight, that we, as a people, will get to the Promised Land."
+        <div class="quote-author">— Dr. Martin Luther King Jr., April 3, 1968</div>
+    </div>
+
+    <p><strong>24 hours later, they killed him.</strong></p>
+
+    <p>Not for the marches. Not for the speeches.</p>
+
+    <p>They killed him because he stopped asking for <em>civil rights</em> and started demanding <strong>economic rights.</strong></p>
+
+    <p>He launched the Poor People's Campaign—organizing workers, demanding living wages, building <strong>economic power.</strong></p>
+
+    <p>That's what got him killed.</p>
+
+    <p><strong>Because economic power is the final frontier.</strong></p>
+
+    <p>57 years later, the door he died opening is <strong>finally unlocked.</strong></p>
+
+    <p>Not metaphorically. <strong>Literally.</strong></p>
+
+    <p>Artificial Intelligence doesn't care about your credit score.<br>
+    It doesn't care about your zip code.<br>
+    It doesn't care about your last name.</p>
+
+    <p><strong>AI only cares about one thing: How well you can prompt it.</strong></p>
+
+    <p>And most people are prompting it <em>wrong.</em></p>
+</section>
+
+<!-- SECTION 2: THE PROBLEM (ALEX) -->
+<section>
+    <h2>Most People Use AI Like This:</h2>
+    
+    <p style="background: rgba(255,0,0,0.1); padding: 20px; border-left: 4px solid red; font-style: italic;">
+        "ChatGPT, write me a social media post about my business."
+    </p>
+
+    <p><strong>Output:</strong> Generic garbage that sounds like everyone else.</p>
+    <p><strong>Result:</strong> Zero clients. Zero revenue. Zero sovereignty.</p>
+
+    <h2 style="margin-top: 50px;">The 1% Use AI Like This:</h2>
+
+    <p style="background: rgba(0,255,135,0.1); padding: 20px; border-left: 4px solid #00FF87; font-family: monospace; font-size: 0.95rem;">
+        INSTRUCTION: Act as a Senior Brand Partnerships Director with experience closing 5-figure sponsorship deals...<br><br>
+        CONTEXT: My audience is 1,200 Black entrepreneurs, 22% open rate...<br><br>
+        PROCESS: Analyze their marketing gap → Position my trust as the solution → Structure as pilot program...<br><br>
+        OUTPUT: 3 subject line options + Email script + Media kit.
+    </p>
+
+    <p><strong>Output:</strong> A sponsorship pitch that lands $500-2,000 deals.</p>
+    <p><strong>Result:</strong> Recurring revenue. Economic freedom. <em>Sovereignty.</em></p>
+
+    <p style="font-size: 1.3rem; margin-top: 40px;"><strong>The difference isn't the AI.</strong></p>
+    <p style="font-size: 1.3rem; color: #00FF87; font-weight: 700;">It's the INPUT.</p>
+</section>
+
+<!-- SECTION 3: THE PROOF (ALEX) -->
+<section>
+    <h2>Real People. Real Results. Real Money.</h2>
+
+    <div class="testimonial">
+        <p class="testimonial-text">"I'm a single mom from Memphis with two kids and $847 in savings. I used Prompt #23 from The Dynasty Vault—the 'Micro-SaaS Idea Validator.' 20 minutes with ChatGPT. 48 hours later, I had a working compliance tool."</p>
+        <p class="testimonial-result">Today, she makes $435/month from her kitchen table.</p>
+        <p class="testimonial-author">— Sarah M., Memphis, TN</p>
+    </div>
+
+    <div class="testimonial">
+        <p class="testimonial-text">"I spent 6 months cold-emailing brands for sponsorships. Zero responses. I used Prompt #26—'The Sponsorship Hunter'—from The Dynasty Vault."</p>
+        <p class="testimonial-result">72 hours later: $1,200 sponsorship deal. One email. One framework.</p>
+        <p class="testimonial-author">— Jamal T., Atlanta, GA</p>
+    </div>
+
+    <div class="testimonial">
+        <p class="testimonial-text">"I'm a real estate investor. I almost bought a 'deal' property for $180K. I used Prompt #38—'The BRRRR Strategy Simulator'—from The Dynasty Vault. The math showed I'd lose $40K."</p>
+        <p class="testimonial-result">I walked away. That one prompt saved me more than most people make in a year.</p>
+        <p class="testimonial-author">— Jerome W., Chicago, IL</p>
+    </div>
+
+    <p style="font-size: 1.2rem; margin-top: 40px; text-align: center;"><em>These aren't special people.<br>They're <strong>builders</strong> who had the right <strong>tools.</strong></em></p>
+</section>
+
+<!-- CTA BREAK -->
+<div style="text-align: center; margin: 60px 0;">
+    <a href="https://subscribe-forms.beehiiv.com/e828f662-7fe5-410b-a200-e3b12d760c2a?utm_source=www.culturecodeai.com&utm_medium=newsletter&utm_campaign=family-first-a-quiet-heads-up-before-monday&_bhlid=4100ffa418de56c79ea3313292e2d1186a93923d" class="cta-button">Join The Waitlist - Get First Access →</a>
+    <p class="urgency">⚡ Launch Monday, January 20th at 6:00 AM EST</p>
+</div>
+
+<!-- SECTION 4: THE SOLUTION (ALEX) -->
+<section>
+    <h2>Introducing: The Dynasty Vault</h2>
+    
+    <p style="font-size: 1.3rem; margin-bottom: 30px;">75 AI mega-prompts designed to turn ChatGPT into your:</p>
+
+    <ul style="list-style: none; font-size: 1.2rem; line-height: 2;">
+        <li><strong style="color: #00FF87;">→</strong> CFO (Chief Financial Officer)</li>
+        <li><strong style="color: #00FF87;">→</strong> CMO (Chief Marketing Officer)</li>
+        <li><strong style="color: #00FF87;">→</strong> CTO (Chief Technology Officer)</li>
+        <li><strong style="color: #00FF87;">→</strong> General Counsel</li>
+        <li><strong style="color: #00FF87;">→</strong> Strategy Consultant</li>
+    </ul>
+
+    <p style="margin-top: 30px;">Not questions. <strong>Frameworks.</strong></p>
+
+    <p>Based on:</p>
+    <ul style="list-style: none; font-size: 1.1rem; line-height: 1.8;">
+        <li>→ <strong>Blue Ocean Strategy</strong> (market domination)</li>
+        <li>→ <strong>Hormozi's Value Equation</strong> (offer creation)</li>
+        <li>→ <strong>Chris Voss Negotiation</strong> (deal closing)</li>
+        <li>→ <strong>Cialdini's Psychology</strong> (persuasion)</li>
+    </ul>
+
+    <h3 style="margin-top: 50px;">14 Volumes:</h3>
+
+    <div class="volumes-grid">
+        <div class="volume-card">
+            <span class="volume-emoji">🏛️</span>
+            <div class="volume-title">VOLUME 1: The Foundation</div>
+            <p class="volume-desc">Blue Ocean Market Domination • Grand Slam Offer Engineering • Chris Voss Deal Closing</p>
+        </div>
+
+        <div class="volume-card">
+            <span class="volume-emoji">📢</span>
+            <div class="volume-title">VOLUME 2: The Voice</div>
+            <p class="volume-desc">Neuromarketing Content Engine • Viral Video Scripts • Hollywood-Level Storytelling</p>
+        </div>
+
+        <div class="volume-card">
+            <span class="volume-emoji">⚙️</span>
+            <div class="volume-title">VOLUME 3: The Engine</div>
+            <p class="volume-desc">Self-Healing SOPs • Cult Brand Architecture • Hiring A-Players</p>
+        </div>
+
+        <div class="volume-card">
+            <span class="volume-emoji">💰</span>
+            <div class="volume-title">VOLUME 4: The Bag</div>
+            <p class="volume-desc">Pattern Interrupt Cold Outreach • Wolf Objection Handling • High-Ticket Pricing Psychology</p>
+        </div>
+
+        <div class="volume-card">
+            <span class="volume-emoji">🧠</span>
+            <div class="volume-title">VOLUME 5: The Mastery</div>
+            <p class="volume-desc">Feynman Learning Protocol • Imposter Syndrome Killer • Meta-Prompt Generator</p>
+        </div>
+
+        <div class="volume-card">
+            <span class="volume-emoji">📈</span>
+            <div class="volume-title">VOLUME 6: Digital Dominance</div>
+            <p class="volume-desc">Sponsorship Hunter Pitch • Zombie List Resurrection • Narrative Transport Welcome Series</p>
+        </div>
+
+        <div class="volume-card">
+            <span class="volume-emoji">🏘️</span>
+            <div class="volume-title">VOLUME 7: The Asset King</div>
+            <p class="volume-desc">Deal Hunter Investment Analyzer • Subject-To Creative Financing • BRRRR Strategy Simulator</p>
+        </div>
+
+        <div class="volume-card">
+            <span class="volume-emoji">💻</span>
+            <div class="volume-title">VOLUME 8: The Tech Mogul</div>
+            <p class="volume-desc">Micro-SaaS Idea Validator • No-Code CTO Stack • Churn Killer Onboarding</p>
+        </div>
+
+        <div class="volume-card">
+            <span class="volume-emoji">🏧</span>
+            <div class="volume-title">VOLUME 9: The Digital Landlord</div>
+            <p class="volume-desc">Bestseller eBook Architect • Trust-Based Affiliate Reviewer • Template Generator</p>
+        </div>
+
+        <div class="volume-card">
+            <span class="volume-emoji">🌍</span>
+            <div class="volume-title">VOLUME 10: The Global Citizen</div>
+            <p class="volume-desc">Authority Bio Architect • Podcast Tour Booking • Press Magnet (HARO)</p>
+        </div>
+
+        <div class="volume-card">
+            <span class="volume-emoji">⚖️</span>
+            <div class="volume-title">VOLUME 11: The Legal Eagle</div>
+            <p class="volume-desc">Iron-Clad Service Agreements • Cease & Desist Letters • Partnership Prenups</p>
+        </div>
+
+        <div class="volume-card">
+            <span class="volume-emoji">✈️</span>
+            <div class="volume-title">VOLUME 12: The World Traveler</div>
+            <p class="volume-desc"><strong>Blaxit Scout</strong> (Safe Communities for Black Expats) • Digital Nomad Visa Navigator</p>
+        </div>
+
+        <div class="volume-card">
+            <span class="volume-emoji">👑</span>
+            <div class="volume-title">VOLUME 13: The Parent-Preneur</div>
+            <p class="volume-desc">Family Office Operating System • Junior CEO Financial Curriculum • Dynasty Trust Planner</p>
+        </div>
+
+        <div class="volume-card">
+            <span class="volume-emoji">🏰</span>
+            <div class="volume-title">VOLUME 14: The Dynasty</div>
+            <p class="volume-desc">Chief of Staff Agent • Board of Advisors Simulator • Exit Strategy Valuator</p>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 5: VALUE STACK (ALEX) -->
+<section>
+    <h2>If You Hired Humans to Do What These 75 Prompts Do:</h2>
+
+    <div class="value-stack">
+        <div class="value-item">
+            <span class="value-label">McKinsey Strategy Consultant</span>
+            <span class="value-price">$5,000</span>
+        </div>
+        <div class="value-item">
+            <span class="value-label">Creative Agency Retainer</span>
+            <span class="value-price">$5,000</span>
+        </div>
+        <div class="value-item">
+            <span class="value-label">Corporate Attorney</span>
+            <span class="value-price">$2,250</span>
+        </div>
+        <div class="value-item">
+            <span class="value-label">Real Estate Investment Analyst</span>
+            <span class="value-price">$10,000</span>
+        </div>
+        <div class="value-item">
+            <span class="value-label">Fractional CTO</span>
+            <span class="value-price">$2,000</span>
+        </div>
+        <div class="value-item">
+            <span class="value-label">Estate Planning Attorney</span>
+            <span class="value-price">$3,000</span>
+        </div>
+        <div class="value-item">
+            <span class="value-label">TOTAL VALUE:</span>
+            <span class="value-price total-value">$27,250</span>
+        </div>
+        <div class="value-item">
+            <span class="value-label">Your Price:</span>
+            <span class="value-price your-price">$27</span>
+        </div>
+    </div>
+
+    <p style="text-align: center; font-size: 1.4rem; margin-top: 30px;">
+        <strong>That's a 1,009x ROI.</strong>
+    </p>
+</section>
+
+<!-- WITHOUT VS WITH -->
+<section>
+    <h2>The Choice Is Simple:</h2>
+
+    <div class="comparison">
+        <div class="comparison-column without">
+            <h3 style="color: #ff4444;">WITHOUT The Dynasty Vault</h3>
+            <ul>
+                <li>You spend 6 months "figuring it out" through trial and error</li>
+                <li>You pay $500/hour for consultants who give generic advice</li>
+                <li>You use AI like everyone else and get mediocre results</li>
+                <li>You stay stuck asking "How do I...?" instead of executing</li>
+                <li>You watch others build wealth while you wait for permission</li>
+            </ul>
+        </div>
+
+        <div class="comparison-column with">
+            <h3 style="color: #00FF87;">WITH The Dynasty Vault</h3>
+            <ul>
+                <li>You copy-paste a framework and execute in 20 minutes</li>
+                <li>You turn ChatGPT into your $100K executive team</li>
+                <li>You use AI like the 1% and get exceptional results</li>
+                <li>You stop asking questions and start printing money</li>
+                <li>You build economic sovereignty while they're still planning</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- CTA BREAK -->
+<div style="text-align: center; margin: 60px 0;">
+    <a href="https://subscribe-forms.beehiiv.com/e828f662-7fe5-410b-a200-e3b12d760c2a?utm_source=www.culturecodeai.com&utm_medium=newsletter&utm_campaign=family-first-a-quiet-heads-up-before-monday&_bhlid=4100ffa418de56c79ea3313292e2d1186a93923d" class="cta-button">Join The Waitlist - Get First Access →</a>
+    <p class="urgency">⚡ Newsletter Subscribers Get $27 Early Access (Public Pays $47)</p>
+</div>
+
+<!-- SECTION 6: THE COVENANT (MYRON) -->
+<section>
+    <h2>This Is Not a Purchase. This Is a Covenant.</h2>
+
+    <p>When you join the waitlist and buy on Monday, you're not just buying prompts.</p>
+
+    <p>You're making a <strong>promise</strong> to yourself:</p>
+
+    <div class="quote" style="border-left-color: #00FF87;">
+        "I am done waiting.<br>
+        I am done asking.<br>
+        I am done begging.<br><br>
+        I am a BUILDER.<br><br>
+        And I will honor the ancestors who died for my freedom by USING the tools they never had."
+    </div>
+
+    <p><strong>That's what this is.</strong></p>
+
+    <p>A tool for <em>builders.</em></p>
+
+    <p>Not waiters. <strong>Builders.</strong></p>
+</section>
+
+<!-- SECTION 7: THE GUARANTEE (ALEX) -->
+<div class="guarantee">
+    <h3>🛡️ My Guarantee:</h3>
+    <p style="font-size: 1.2rem;">Use <strong>ANY 3 prompts</strong> from The Dynasty Vault.</p>
+    <p style="font-size: 1.2rem; margin: 20px 0;">If you don't get at least <strong style="color: #00FF87;">$500 in value</strong> within 30 days (time saved, revenue generated, or mistakes avoided), email me a screenshot of your work.</p>
+    <p style="font-size: 1.2rem;">I'll refund you personally.</p>
+    <p style="font-size: 1.3rem; margin-top: 20px;"><strong style="color: #D4AF37;">And I'll give you $10 for wasting your time.</strong></p>
+    <p style="font-size: 1.1rem; margin-top: 20px; font-style: italic;">And I'll pray for your success.</p>
+    <p style="margin-top: 30px;">Because I'm not just selling you a product.</p>
+    <p><strong>I'm investing in your future.</strong></p>
+</div>
+
+<!-- SECTION 8: THE FINAL CTA -->
+<section style="text-align: center; margin: 80px 0;">
+    <h2 style="margin-bottom: 30px;">Dr. King Made It to the Mountaintop.</h2>
+    <p style="font-size: 1.3rem; margin-bottom: 20px;">But he couldn't stay.</p>
+    <p style="font-size: 1.3rem; margin-bottom: 40px;"><strong>He had to send YOU.</strong></p>
+
+    <p style="font-size: 1.2rem; margin-bottom: 30px;">And you're here.</p>
+    <p style="font-size: 1.2rem; margin-bottom: 50px;">So what are you going to do with it?</p>
+
+    <a href="https://subscribe-forms.beehiiv.com/e828f662-7fe5-410b-a200-e3b12d760c2a?utm_source=www.culturecodeai.com&utm_medium=newsletter&utm_campaign=family-first-a-quiet-heads-up-before-monday&_bhlid=4100ffa418de56c79ea3313292e2d1186a93923d" class="cta-button" style="font-size: 1.4rem; padding: 25px 60px;">JOIN THE WAITLIST - GET FIRST ACCESS →</a>
+
+    <div class="stats" style="margin-top: 50px;">
+        <div class="stat-box">
+            <span class="stat-number">$27</span>
+            <span class="stat-label">Early Access (48 Hours)</span>
+        </div>
+        <div class="stat-box">
+            <span class="stat-number">$47</span>
+            <span class="stat-label">Regular Price (After)</span>
+        </div>
+        <div class="stat-box">
+            <span class="stat-number">1,009x</span>
+            <span class="stat-label">ROI on Your Investment</span>
+        </div>
+    </div>
+
+    <p class="urgency" style="margin-top: 40px; font-size: 1.1rem;">⚡ Launching Monday, January 20th (MLK Day) at 6:00 AM EST</p>
+    <p class="urgency" style="font-size: 1.1rem;">💰 Waitlist Gets $27 Early Access | Public Pays $47</p>
+    <p class="urgency" style="font-size: 1.1rem;">✊🏾 Family Eats First</p>
+
+    <div class="quote" style="margin-top: 50px;">
+        "The time is always right to do what is right."
+        <div class="quote-author">— Dr. Martin Luther King Jr.</div>
+    </div>
+
+    <p style="font-size: 1.3rem; margin-top: 40px;"><strong>The right move is sovereignty.</strong></p>
+    <p style="font-size: 1.1rem; margin-top: 20px;">Join the waitlist above. Check your email Monday at 6am.</p>
+</section>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <p style="font-size: 1rem; opacity: 1; margin-bottom: 20px;"><strong>Build your dynasty,</strong></p>
+    <p style="font-size: 1rem; opacity: 1; margin-bottom: 30px;"><strong>Morris Smith</strong><br><em>Founder, The Culture Code AI</em></p>
+    <p>© 2025 The Culture Code AI | Build Your Dynasty</p>
+    <p>Honoring Dr. Martin Luther King Jr.'s Legacy Through Economic Action</p>
+</footer>
+
+</body>
+</html>
